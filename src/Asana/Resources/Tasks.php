@@ -6,6 +6,10 @@ use Asana\Resources\Gen\TasksBase;
 
 class Tasks extends TasksBase
 {
+    public function search($workspace, $params = array(), $options = array())
+    {
+        return $this->searchInWorkspace($workspace, $params, $options);
+    }
     /**
      * Marks a set of tasks as dependencies of this task, if they are not already dependencies. A task can have at most 15 dependencies.
      *
