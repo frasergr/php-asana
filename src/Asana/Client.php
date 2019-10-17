@@ -66,6 +66,9 @@ class Client
         $this->user_task_lists = new Resources\UserTaskLists($this);
         $this->workspaces = new Resources\Workspaces($this);
         $this->webhooks = new Resources\Webhooks($this);
+        $this->custom_fields = new Resources\CustomFields($this);
+        $this->custom_field_settings = new Resources\CustomFieldSettings($this);
+        $this->batch = new Resources\Batch($this);
     }
 
     public static function accessToken($accessToken, $options = array())
